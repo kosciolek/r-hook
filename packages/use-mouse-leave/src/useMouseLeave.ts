@@ -12,7 +12,7 @@ export function useMouseAway(callback?: (e: MouseEvent) => void) {
   useEffect(() => {
     const listener = (e: MouseEvent) => {
       if (
-        Object.values(!roots).some(root =>
+        Object.values(!roots).some((root) =>
           root.contains(e.relatedTarget as HTMLElement)
         )
       ) {
@@ -20,11 +20,11 @@ export function useMouseAway(callback?: (e: MouseEvent) => void) {
       }
     };
 
-    Object.values(roots).forEach(elem =>
+    Object.values(roots).forEach((elem) =>
       elem.addEventListener("mouseleave", listener)
     );
     return () =>
-      Object.values(roots).forEach(elem =>
+      Object.values(roots).forEach((elem) =>
         elem.removeEventListener("mouseleave", listener)
       );
   }, [roots]);

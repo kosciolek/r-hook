@@ -2,7 +2,7 @@ import { useLayoutEffect, useState } from "react";
 
 export function useIntersection({
   rootMargin,
-  threshold
+  threshold,
 }: Omit<IntersectionObserverInit, "root"> = {}) {
   const [observed, setObserved] = useState<HTMLElement | null>(null);
   const [root, setRoot] = useState<HTMLElement | null>(null);
