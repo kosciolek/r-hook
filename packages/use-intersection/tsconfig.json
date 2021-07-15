@@ -4,7 +4,5 @@
     "outDir": "dist",
     "rootDir": "src"
   },
-  "references": [
-     {"path": "../use-elements"},
-  ]
+  "references": []
 }

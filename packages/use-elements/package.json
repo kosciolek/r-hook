@@ -15,7 +15,7 @@
   },
   "scripts": {
     "test": "echo 0",
-    "build": "yarn tsc --build"
+    "build": "rm -rf dist && yarn tsc --build"
   },
   "bugs": {
     "url": "https://github.com/kosciolek/r-hook/issues"

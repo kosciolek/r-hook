@@ -1,4 +1,3 @@
-"use strict";
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -10,14 +9,12 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.useElements = void 0;
-var react_1 = require("react");
-function useElements() {
-    var _a = react_1.useState({}), elements = _a[0], setElements = _a[1];
-    var funcsRef = react_1.useRef({});
-    var ref = react_1.useRef(elements);
-    var addElement = react_1.useCallback(function (key) {
+import { useCallback, useEffect, useMemo, useRef, useState, } from "react";
+export function useElements() {
+    var _a = useState({}), elements = _a[0], setElements = _a[1];
+    var funcsRef = useRef({});
+    var ref = useRef(elements);
+    var addElement = useCallback(function (key) {
         if (!funcsRef.current[key])
             funcsRef.current[key] = function (elem) {
                 if (elem) {
@@ -40,10 +37,9 @@ function useElements() {
             };
         return funcsRef.current[key];
     }, []);
-    react_1.useEffect(function () {
+    useEffect(function () {
         ref.current = elements;
     }, [elements]);
-    var hasElements = react_1.useMemo(function () { return Object.keys(elements).length > 0; }, [elements]);
+    var hasElements = useMemo(function () { return Object.keys(elements).length > 0; }, [elements]);
     return { elements: elements, addElement: addElement, elementsRef: ref, hasElements: hasElements };
 }
-exports.useElements = useElements;

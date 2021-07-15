@@ -1,5 +1,5 @@
 {
-  "name": "@r-hook/use-draw-paths",
+  "name": "@r-hook/use-mouse-leave",
   "version": "1.0.5",
   "description": "Draw paths that connect DOM nodes.",
   "author": "kosciolek <45483493+kosciolek@users.noreply.github.com>",
