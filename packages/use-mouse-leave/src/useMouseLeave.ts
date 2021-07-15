@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useElements } from "@r-hook/use-elements";
 
-export function useMouseAway(callback?: (e: MouseEvent) => void) {
+export function useMouseLeave(callback?: (e: MouseEvent) => void) {
   const { elements: roots, addElement: addRoot } = useElements();
 
   const callbackLatestRef = useRef(callback);
@@ -12,7 +12,7 @@ export function useMouseAway(callback?: (e: MouseEvent) => void) {
   useEffect(() => {
     const listener = (e: MouseEvent) => {
       if (
-        Object.values(!roots).some((root) =>
+        !Object.values(!roots).some((root) =>
           root.contains(e.relatedTarget as HTMLElement)
         )
       ) {
