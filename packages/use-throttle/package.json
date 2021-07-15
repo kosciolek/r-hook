@@ -1,6 +1,6 @@
 {
   "name": "@r-hook/use-throttle",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Manage multiple refs/elements, be notified of mounts/unmounts.",
   "author": "kosciolek <45483493+kosciolek@users.noreply.github.com>",
   "homepage": "https://github.com/kosciolek/r-hook#readme",
