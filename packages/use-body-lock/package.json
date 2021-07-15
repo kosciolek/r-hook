@@ -1,6 +1,6 @@
 {
   "name": "@r-hook/use-body-lock",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Lock body overflow, auto compensate with padding.",
   "author": "kosciolek <45483493+kosciolek@users.noreply.github.com>",
   "homepage": "https://github.com/kosciolek/r-hook#readme",
