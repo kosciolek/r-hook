@@ -4,12 +4,8 @@
   "description": "Manage multiple refs/elements, be notified of mounts/unmounts.",
   "author": "kosciolek <45483493+kosciolek@users.noreply.github.com>",
   "homepage": "https://github.com/kosciolek/r-hook#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "dist/index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
   "files": [
     "dist/*"
   ],
@@ -33,5 +29,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "3a8079630061c2765b763adf7544be386dc844b6"
 }
