@@ -1,8 +1,4 @@
-import {
-  useCallback,
-  useEffect,
-  useRef,
-} from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 const perf = typeof performance !== "undefined" ? performance : Date;
 const getNow = () => perf.now();
