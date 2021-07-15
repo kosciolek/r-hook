@@ -1,1 +1,0 @@
-export { useDrawPaths } from "./useDrawPaths";
