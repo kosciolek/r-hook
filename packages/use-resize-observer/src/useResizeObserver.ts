@@ -20,5 +20,5 @@ export function useResizeObserver() {
     return () => ro.disconnect();
   }, [observed]);
 
-  return [setObserved, entry];
+  return [setObserved, entry] as const;
 }

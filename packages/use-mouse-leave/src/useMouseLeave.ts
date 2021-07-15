@@ -12,7 +12,7 @@ export function useMouseLeave(callback?: (e: MouseEvent) => void) {
   useEffect(() => {
     const listener = (e: MouseEvent) => {
       if (
-        !Object.values(!roots).some((root) =>
+        !Object.values(roots).some((root) =>
           root.contains(e.relatedTarget as HTMLElement)
         )
       ) {
