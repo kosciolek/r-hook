@@ -1,0 +1,36 @@
+{
+  "name": "@r-hook/use-draw-paths",
+  "version": "1.0.4",
+  "description": "Draw paths that connect DOM nodes.",
+  "author": "kosciolek <45483493+kosciolek@users.noreply.github.com>",
+  "homepage": "https://github.com/kosciolek/r-hook#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosciolek/r-hook.git"
+  },
+  "scripts": {
+    "test": "echo 0",
+    "build": "yarn tsc --build"
+  },
+  "bugs": {
+    "url": "https://github.com/kosciolek/r-hook/issues"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.14",
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@r-hook/use-elements": "^1.0.4"
+  }
+}

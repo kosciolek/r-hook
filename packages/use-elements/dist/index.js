@@ -1,6 +1,5 @@
-
+"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useElements = void 0;
-const useElements_1 = require("./useElements");
-
-Object.defineProperty(exports, "useElements", { enumerable: true, get () { return useElements_1.useElements; } });
+var useElements_1 = require("./useElements");
+Object.defineProperty(exports, "useElements", { enumerable: true, get: function () { return useElements_1.useElements; } });
