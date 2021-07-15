@@ -3,7 +3,7 @@ import {
   useEffect,
   useLayoutEffect,
   useRef,
-  useState
+  useState,
 } from "react";
 import { Id, useElements } from "@r-hook/use-elements";
 import { Drawer } from "./Drawer";
@@ -32,13 +32,13 @@ export function useDrawPaths<T extends Id = Id>(
     }, {} as any);
 
     const rootRect = root!.getBoundingClientRect();
-    const drawers = latestFuncsRef.current.map(func => {
+    const drawers = latestFuncsRef.current.map((func) => {
       const drawer = new Drawer(rootRect.x, rootRect.y);
       func(rects, drawer);
       return drawer;
     });
 
-    setPaths(drawers.map(drawer => drawer.get()));
+    setPaths(drawers.map((drawer) => drawer.get()));
   }, [elements, canDraw, root]);
 
   useLayoutEffect(() => {
@@ -49,9 +49,10 @@ export function useDrawPaths<T extends Id = Id>(
   }, [recalculate]);
 
   useEffect(() => {
-    if (!canDraw) return;
+    if (!canDraw) return () => {};
     const ro = new ResizeObserver(() => recalculate());
-    Object.values(elements).forEach(elem => ro.observe(elem));
+    Object.values(elements).forEach((elem) => ro.observe(elem));
+
     return () => ro.disconnect();
   }, [elements, recalculate, canDraw]);
 

@@ -36,13 +36,13 @@ export class Drawer {
   }
 
   bezier({
-           endX: _endX,
-           endY: _endY,
-           ctrlOffsetEndX = 0,
-           ctrlOffsetEndY = 0,
-           ctrlOffsetStartX = 0,
-           ctrlOffsetStartY = 0
-         }: {
+    endX: _endX,
+    endY: _endY,
+    ctrlOffsetEndX = 0,
+    ctrlOffsetEndY = 0,
+    ctrlOffsetStartX = 0,
+    ctrlOffsetStartY = 0,
+  }: {
     endX: number;
     endY: number;
 
@@ -55,14 +55,14 @@ export class Drawer {
     const endY = _endY - this.rootY;
 
     this.lines.push(
-      `C ${this.cursorPos!.x + ctrlOffsetStartX} ${this.cursorPos!.y +
-      ctrlOffsetStartY}, ${endX + ctrlOffsetEndX} ${endY +
-      ctrlOffsetEndY}, ${endX} ${endY}`
+      `C ${this.cursorPos!.x + ctrlOffsetStartX} ${
+        this.cursorPos!.y + ctrlOffsetStartY
+      }, ${endX + ctrlOffsetEndX} ${endY + ctrlOffsetEndY}, ${endX} ${endY}`
     );
 
     this.cursorPos = {
       x: endX,
-      y: endY
+      y: endY,
     };
 
     return this;
