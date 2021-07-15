@@ -1,6 +1,7 @@
 lerna-debug.log
-node_modules/*
-.idea
-.history
+node_modules/
+.idea/
+.history/
 dist/
 tsconfig.tsbuildinfo
+yarn-error.log
