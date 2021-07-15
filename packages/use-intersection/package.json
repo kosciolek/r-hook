@@ -1,7 +1,7 @@
 {
   "name": "@r-hook/use-intersection",
   "version": "1.0.8",
-  "description": "Manage multiple refs/elements, be notified of mounts/unmounts.",
+  "description": "IntersectionObserver hook.",
   "author": "kosciolek <45483493+kosciolek@users.noreply.github.com>",
   "homepage": "https://github.com/kosciolek/r-hook#readme",
   "license": "MIT",

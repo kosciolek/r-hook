@@ -1,7 +1,7 @@
 {
   "name": "@r-hook/use-mouse-leave",
   "version": "1.0.10",
-  "description": "Draw paths that connect DOM nodes.",
+  "description": "Get notified when the mouse leaves a certain area.",
   "author": "kosciolek <45483493+kosciolek@users.noreply.github.com>",
   "homepage": "https://github.com/kosciolek/r-hook#readme",
   "license": "MIT",
