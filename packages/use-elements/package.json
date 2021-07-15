@@ -1,6 +1,6 @@
 {
   "name": "@r-hook/use-elements",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Manage multiple refs/elements, be notified of mounts/unmounts.",
   "author": "kosciolek <45483493+kosciolek@users.noreply.github.com>",
   "homepage": "https://github.com/kosciolek/r-hook#readme",
