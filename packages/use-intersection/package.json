@@ -15,7 +15,7 @@
   },
   "scripts": {
     "test": "echo 0",
-    "build": "rm -rf dist && yarn tsc --build"
+    "build": "rm -rf dist tsconfig.tsbuildinfo && yarn tsc --build"
   },
   "bugs": {
     "url": "https://github.com/kosciolek/r-hook/issues"
@@ -29,5 +29,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "9933e3a1fa7a0d50bdc759faeae740a44420447f"
 }
