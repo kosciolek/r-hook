@@ -1,0 +1,34 @@
+{
+  "name": "@r-hook/use-elements",
+  "version": "1.0.0",
+  "description": "Manage multiple refs/elements, be notified of mounts/unmounts.",
+  "author": "kosciolek <45483493+kosciolek@users.noreply.github.com>",
+  "homepage": "https://github.com/kosciolek/r-hook#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosciolek/r-hook.git"
+  },
+  "scripts": {
+    "test": "echo 0",
+    "build": "yarn tsc --build"
+  },
+  "bugs": {
+    "url": "https://github.com/kosciolek/r-hook/issues"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.14",
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}
