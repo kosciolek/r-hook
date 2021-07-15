@@ -1,0 +1,16 @@
+{
+  "name": "r-hook",
+  "version": "1.0.0",
+  "description": "React hooks.",
+  "main": "index.js",
+  "author": "kosciolek",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "typescript": "^4.3.5"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
