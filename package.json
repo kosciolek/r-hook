@@ -32,8 +32,5 @@
     "lint": "eslint .",
     "lint-fix": "prettier . --write && eslint . --fix",
     "test": "lerna run test"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
