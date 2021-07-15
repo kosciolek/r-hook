@@ -28,6 +28,7 @@
   ],
   "scripts": {
     "prepare": "husky install",
+    "prepublishOnly": "lerna run build",
     "lint": "eslint .",
     "lint-fix": "prettier . --write && eslint . --fix",
     "test": "lerna run test"
