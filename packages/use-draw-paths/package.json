@@ -1,6 +1,6 @@
 {
   "name": "@r-hook/use-draw-paths",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Draw paths that connect DOM nodes.",
   "author": "kosciolek <45483493+kosciolek@users.noreply.github.com>",
   "homepage": "https://github.com/kosciolek/r-hook#readme",
